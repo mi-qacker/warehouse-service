@@ -1,6 +1,6 @@
 import { Application, Router } from "@oak/oak";
 
-const router = new Router();
+export const router = new Router();
 
 router.get("/", (ctx) => {
   ctx.response.body = "Hello world";
