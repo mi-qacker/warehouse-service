@@ -1,10 +1,5 @@
-import { Application, Router } from "@oak/oak";
-
-const router = new Router();
-
-router.get("/", (ctx) => {
-  ctx.response.body = "Hello world";
-});
+import { Application } from "@oak/oak";
+import { router } from "./router.ts";
 
 const app = new Application();
 app.use(router.routes());
