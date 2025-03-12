@@ -1,6 +1,6 @@
 import { testing } from "@oak/oak";
-import { router } from "./app.ts";
 import { assertEquals } from "jsr:@std/assert";
+import { router } from "./router.ts";
 
 Deno.test('GET / return "Hello world"', async () => {
   const mockCtx = testing.createMockContext({
